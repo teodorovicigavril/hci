@@ -1,0 +1,22 @@
+body{
+    width: 55%;
+    margin: 0 auto;
+    background-color: darkgray;
+    align-content: center;
+    text-align: center;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.qoc {
+    text-align: left;
+    margin-left: 40px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}

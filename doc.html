@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholary HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body prefix="schema: http://schema.org">
+
+    <header>
+        <h1>Ultimate Tic-Tac-Toe</h1>
+    </header>
+    <div role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Gavril">
+                    <meta property="schema:additionalName" content="Anton">
+                    <meta property="schema:familyName" content="Teodorovici">
+                    <a href="https://github.com/teodorovicigavril">
+                        <span property="schema:name">Teodorovici Gavril-Anton</span>
+                </a>
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2><span>1. </span>The scope of application</h2>
+        <p>
+            This application connects friends and strangers together to enjoy and learn a different type of the well-known game Tic-Tac-Toe.
+        </p>
+    </section>
+
+    <section id="introduction">
+        <h2><span>2. </span>Introduction</h2>
+        <p>
+            We all know that mobile games are present in almost every smartphone devices. 
+            People enjoy playing games and what better way than a new game, a more evolved version of Tic-Tac-Toe game where players
+            can try different strategies, play against computer or other players in order to achieve the highest places on game's top.
+        </p>
+    </section>
+
+    <section id="architecture">
+        <h2><span>3. </span>Application architecture</h2>
+        <span class="tab"></span>The application contains 9 pages.<br>
+        <p>
+            The game starts with home page where the user have next options:
+            <ul>
+                <li>play the game</li>
+                <li>see rankings</li>
+                <li>access About page</li>
+                <li>go to Profile page</li>
+            </ul>
+            <br>
+            In order for someone to play the game and/or access profile page, he must login or register. Home page offers two buttons for this 'Login' and 'Register'.
+            Anyone that have the game can access to Rankins and About Page. For a easier navigation, the AppBar contains a Menu Icon used for navigation through pages and logout functionality.
+            From 'Profile Page', the user can go to 'Update Profile Page' where he can update his account details. When choosing to play the game, the user is sent to a 'Main Game Page'
+            and then he can choose to play against computer or other players, after this the user is sent to the actual game page.
+            
+        </p>
+    </section>
+
+    <section id="pages">
+        <h2><span>4. </span>Application pages</h2>
+
+        <section>
+            <h3><span>4.1 </span>Home Page</h3>
+            <p>
+                The Home Page is the page where user have different buttons linked to different pages. He can login/register and then start his experience.
+            </p>
+
+            <img src="prototype/home_page.png" alt="Home Page">
+        </section>
+
+
+        <section>
+            <h3><span>4.2 </span>Login Page</h3>
+            <p>
+               With this page the user can log in the application using the email and the password of the account.
+               More options for logging are in progress.
+            </p>
+            <img src="prototype/login_page.png" alt="Login Page" >
+
+
+        </section>
+
+        <section>
+            <h3><span>4.3 </span>Register Page</h3>
+            <p>
+                In case of a new user, or a user that wants a new account this is the page needed.
+                Anyone in this situation should complete a formular with next information: email, password, username and profile images.
+                This informations can be modified later on.
+            </p>
+
+            <img src="prototype/signup_page.png" alt="Register Page" >
+        </section>
+
+        <section>
+            <h3><span>4.4 </span>Profile Page</h3>
+            <p>
+                This page contains account informations about the current logged user. 
+                Here, the user can press 'Update profile' in order to complete a formular with the informations he need to change.
+                Furthermore, here, the user can logout from app and see his status regading the winns and the win rate so far. 
+            </p>
+
+            <img src="prototype/profile_page.png" alt="Profile Page" >
+        </section>
+
+        <section>
+            <h3><span>4.5 </span>Update Profile Page</h3>
+            <p>
+                In order to access this page, you have to be logged in and to enter the current password. 
+                As explained before, here, the user complete the form in order to update his account informations.
+            </p>
+            <img src="prototype/update_profile.png" alt="Update Profile Page" >
+
+            <br><br>
+            <div>
+                <p>Pop-up used for user when deleting or updating profile.</p>
+                <img src="prototype/edit_profile_popup.png" alt="Pop-Up Update Profile Page" >
+            </div>
+        </section>
+
+        <section>
+            <h3><span>4.6 </span>Rankings Page</h3>
+            <p>
+                On this page, users can see top 10 players from the last week and top players so far by win rate. 
+                The page also contains a search filter for every player that wants to know his ranking.
+            </p>
+
+            <img src="prototype/rankings.png" alt="Rankings Page" >
+        </section>
+
+        <section>
+            <h3><span>4.7 </span>About Page</h3>
+            <p>
+                Here you can find informations about the game, how to play, how it was implemented, who implemented, 
+                contact informations and a video where you can see how to play the game.
+            </p>
+
+            <img src="prototype/about_page.png" alt="About Page" >
+        </section>
+
+        <section>
+            <h3><span>4.8 </span>Main Game Page</h3>
+            <p>
+                When pressing 'Play' button from 'Home Page', the user have to choose which mode, 
+                against computer or against other players (including friends - by code).
+            </p>
+
+            <img src="prototype/play_page.png" alt="Main Game Page" >
+        </section>
+
+        <section>
+            <h3><span>4.9 </span>Game Page</h3>
+            <p>
+                This is the actual Game, here the player have the pieces and the table on the screen and play the game.
+            </p>
+            <div>
+                <div>
+                    <img src="prototype/player_vs_player.png" alt="PlayerVSPlayer" >
+                    <p>Player vs Player</p>
+                </div>
+                <br><br>
+                <div>
+                    <img src="prototype/emotes.png" alt="Emote" >
+                    <p>Player vs Player - EMOTES</p>
+                </div>
+                <br><br>
+                <div>
+                    <img src="prototype/player_vs_computer.png" alt="PlayerVSComputer" >
+                    <p>Player vs Computer</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="deliverables">
+        <h2><span>5. </span>Concepts</h2>
+
+        <section id="deliverables1">
+            <h3><span>5.1 </span>Wireframe</h3>
+            <div>
+                <p>
+                    A wireframe for this app:
+                    <a href="wireframe/wireframe.pdf">Application wireframe</a>.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3><span>5.2 </span>Design patterns</h3>
+            <div>
+                <p>
+                    Next design patterns where used in the application: 
+                    <ol type="1">
+                        <li>
+                            Input Feedback - This design pattern is used at login and registration process, if the password doesn't respect requirements of a safe password, the user will be warned properly.
+                        </li>
+                        <br>
+                        <li>
+                            Input Prompt - Is present when the user completes forms of Login, Register or Feedback on About Page.
+                        </li>
+                        <br>
+                        <li>
+                            Navigation Tabs - Is present on every page by a menu button which shows current page and possible pages to go.
+                        </li>
+                        <br>
+                        <li>
+                            Home Link - The AppBar contains the logo of the app which is a direct link to the home page. Can be accesed from every page.
+                        </li>
+                        <br>
+                        <li>
+                            Pagination - On 'Rankings' page a list of all users and their scores is present, in order to see all users you need to use pages.
+                        </li>
+                        <br>
+                        <li>
+                            Continuous Scrolling -  On 'Rankings' page a list of top 10 users and their scores is present.
+                        </li>
+                        <br>
+                        <li>
+                            Leaderboards - Users want to know who are the very best performers in a category or overall.
+                        </li>
+                        <br>
+                        <li>
+                            Clear Primary Actions - Actions like login/register, play game, give feedback, see rankings are present in the application being intuivive for the user. 
+                        </li>
+
+                    </ol>
+                </p>
+            </div>
+        </section>
+    </section>
+
+    </section>
+
+
+    <section id="qoc">
+        <h2><span>6. </span>Questions, Options, Criteria</h2>
+        <div class="qoc">
+            <br>
+            <div>
+                <p>Question 1: How can a user see his winning status?</p>
+                <p> &emsp;Option 1: He can see his status by tapping on Profile page.</p>
+                <p> &emsp;Option 2: The user can check his status by looking at Rankings page and search for his username.</p>
+                <p> &emsp;Criteria 1: Intuitive, efficiency.</p>
+                <p> &emsp;Criteria 2: By keyboard/mouse interaction. Useful when you want to see others scores and how much for a better place.</p>
+            </div>
+            <br>
+            <div>
+                <p>Question 2: How can a log-out?</p>
+                <p> &emsp;Option 1: The user can logout from navigation menu.</p>
+                <p> &emsp;Option 2: The user can logout from profile page.</p>
+                <p> &emsp;Criteria 1: Efficiency, can logout from any page, accesibility.</p>
+                <p> &emsp;Criteria 2: Intuitive.</p>
+            </div>
+            <br>
+            <div>
+                <p>Question 3: How can a user learn/see how to play the game?</p>
+                <p> &emsp;Option 1: By pressing on 'About' page, a video and some text describing the game is presented.</p>
+                <p> &emsp;Option 2: By pressing on 'Game' page for first time, a quick tutorial is shown with pop-ups.</p>
+                <p> &emsp;Criteria 1: Intuitive, watching, learing in own rhythm.</p>
+                <p> &emsp;Criteria 2: Efficiency, learning by doing, can be skiped.</p>
+            </div>
+            <br>
+        </div>
+
+    </section>
+
+    <section id="personas">
+        <h2><span>7. </span>Personas</h2>
+        <div>
+            <a href="../Personas/Personas.html">Personas</a>
+        </div>
+    </section>
+
+
+    <section id="references">
+        <h2><span>8. </span>References</h2>
+        <ul>
+            <li property="schema:citation" typeof="schema:WebSite" resource="https://w3c.github.io/scholarly-html/">
+                <cite property="schema:name">
+                        <a href="https://w3c.github.io/scholarly-html/">Scholarly HTML</a>
+                    </cite>
+            </li>
+
+            <li property="schema:citation" typeof="schema:WebSite" resource="https://profs.info.uaic.ro/~stefan.negru/personas/">
+                <cite property="schema:name">
+                    <a href="https://profs.info.uaic.ro/~stefan.negru/personas/">Personas template</a>
+                </cite>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
